@@ -1,0 +1,11 @@
+{
+  "name": "BLESS",
+  "install": "npm ci",
+  "terminals": [
+    {
+      "name": "api",
+      "command": "npm run build && API_KEY=\"${API_KEY:-local-dev-key}\" npm start"
+    }
+  ],
+  "ports": [3000]
+}
