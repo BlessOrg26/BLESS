@@ -1,0 +1,55 @@
+# --- Secrets & credentials (never commit) ---
+.env
+.env.*
+*.pem
+*.key
+*.keystore
+*.pfx
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+credentials*
+*secret*
+*password*
+*token*
+.aws/
+.ssh/
+.gnupg/
+
+# --- Personal / sensitive data ---
+*financial*
+*bank*
+personal/
+private/
+
+# --- Local AI model files (download these yourself; do not commit) ---
+*.gguf
+*.bin
+*.safetensors
+*.onnx
+models/
+.ollama/
+
+# --- Backups created by the agent ---
+*.bak
+*.bak.*
+*.*.bak
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Temp / cache / build ---
+*.tmp
+*.temp
+tmp/
+.cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+*.egg-info/
+.DS_Store
